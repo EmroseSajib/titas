@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import DashBoard from './screens/DashBoard';
+import ManagingDirectorScreen from './screens/ManagingDirectorScreen';
+import MinisterScreen from './screens/MinisterScreen';
+import RoutineScreen from './screens/RoutineScreen';
 
 function App() {
+  const components = [
+    DashBoard,
+    MinisterScreen,
+    ManagingDirectorScreen,
+    RoutineScreen,
+  ];
+  const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Calculate the index of the next component in a cyclic manner
+      const nextIndex = (currentComponentIndex + 1) % components.length;
+      setCurrentComponentIndex(nextIndex);
+    }, 10000); // 10000 milliseconds = 10 seconds
+
+    return () => clearInterval(interval);
+  }, [currentComponentIndex]);
+
+  const CurrentComponent = components[currentComponentIndex];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      {/* <CurrentComponent /> */}
+      <DashBoard />
     </div>
   );
 }
