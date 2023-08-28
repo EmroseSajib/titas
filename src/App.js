@@ -28,8 +28,8 @@ function App() {
 
   return (
     <div className=''>
-      {/* <CurrentComponent /> */}
-      <DashBoard />
+      <CurrentComponent />
+      {/* <RoutineScreen /> */}
     </div>
   );
 }

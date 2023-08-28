@@ -4,8 +4,8 @@ import '../style/photoFrame.css';
 const MinisterScreen = () => {
   return (
     <>
-      <div className='grid md:grid-cols-10'>
-        <div className='md:col-span-4 h-screen flex items-center justify-center bg-gradient-to-b from-white to-cyan-300 bg-opacity-25'>
+      <div className='md:grid md:grid-cols-12'>
+        <div className='md:col-span-7 h-screen flex items-center justify-center bg-gradient-to-b from-white to-cyan-300 bg-opacity-25'>
           <div>
             <div className='hexaton shape-outer heptagon bg-cyan-500 mx-auto'>
               <div
@@ -24,7 +24,7 @@ const MinisterScreen = () => {
           </div>
         </div>
         <div
-          className='md:col-span-6 h-screen bg-cover  bg-no-repeat '
+          className='md:col-span-5 h-screen bg-cover  bg-no-repeat  '
           style={{ backgroundImage: `url(${background})` }}
         >
           <div className='h-screen flex flex-col justify-center items-center '>
