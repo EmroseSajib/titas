@@ -1,27 +1,36 @@
 import React from 'react';
+
 import schedul01 from '../assets/image/schedul01.png';
+import schedul02 from '../assets/image/schedul02.png';
 import logo from '../assets/image/titash_gas.png';
+import '../style/routineanimatedtext.css';
 const RoutineScreen = () => {
   return (
     <>
       <div
-        className='bg-contain  bg-no-repeat h-screen'
-        style={{ backgroundImage: `url(${schedul01})` }}
+        className='absolute inset-0 h-screen'
+        style={{
+          backgroundImage: `url(${schedul01}), url(${schedul02})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top, bottom',
+          backgroundSize: '100% 30%',
+          backgroundAttachment: 'fixed',
+        }}
       >
-        <div className=''>
-          <div>
+        <div>
+          <div className=''>
             <img
-              className='w-[15%] h-auto'
+              className='w-[10%] h-auto ml-5 mt-5'
               src={logo}
               alt=''
             />
           </div>
-          <div className='flex items-center justify-center'>
-            <h2 className='text-2xl py-5 font-semibold text-cyan-500'>
+          <div className='flex justify-center '>
+            <h2 className='text-2xl py-5 font-semibold text-cyan-500 '>
               সভা সময়সূচী
             </h2>
           </div>
-          <div className='flex items-center justify-center h-full relative overflow-x-auto sm:rounded-lg w-full'>
+          <div className='flex items-center justify-center relative overflow-x-auto sm:rounded-lg w-full'>
             <table className='table-auto text-center w-3/4 overflow-x-auto  '>
               <thead className=' bg-gradient-to-r from-white to-cyan-400 bg-opacity-25 border-gray-600 border-2 '>
                 <tr className=''>
@@ -91,6 +100,19 @@ const RoutineScreen = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className='flex justify-center py-10'>
+            <div class=' text-container border border-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700 overflow-hidden  w-[60%]'>
+              <p class='animated-text '>
+                অবৈধ গ্যাস সংযোগ ও ব্যাবহার সংক্রান্ত সতর্কীকরণ বিজ্ঞপ্তি । যে
+                কোন প্রয়োজনে তিতাস হট লাইন ১৬৯৬ নম্বরে কল করুন ।
+              </p>
+            </div>
+            {/* <div class='border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700'>
+              <p className='animated-text'>
+                Something not ideal might be happening.
+              </p>
+            </div> */}
           </div>
         </div>
       </div>

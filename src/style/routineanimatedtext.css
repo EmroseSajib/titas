@@ -1,0 +1,37 @@
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(80%);
+  }
+  40% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  60% {
+    transform: translateX(20%);
+  }
+  70% {
+    transform: translateX(10%);
+  }
+  80% {
+    transform: translateX(-10%);
+  }
+  90% {
+    transform: translateX(-30%);
+  }
+  95% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animated-text {
+  animation: slideRight 10s linear infinite;
+}

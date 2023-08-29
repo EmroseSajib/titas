@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       // Calculate the index of the next component in a cyclic manner
-      const nextIndex = (currentComponentIndex + 1) % components.length;
+      const nextIndex = (currentComponentIndex + 1) % components?.length;
       setCurrentComponentIndex(nextIndex);
     }, 10000); // 10000 milliseconds = 10 seconds
 
@@ -30,6 +30,7 @@ function App() {
     <div className=''>
       <CurrentComponent />
       {/* <RoutineScreen /> */}
+      {/* <ManagingDirectorScreen /> */}
     </div>
   );
 }

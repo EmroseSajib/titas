@@ -1,5 +1,6 @@
 import React from 'react';
 import background from '../assets/image/background.png';
+import md from '../assets/image/md.png';
 import '../style/photoFrame.css';
 const ManagingDirectorScreen = () => {
   return (
@@ -7,13 +8,12 @@ const ManagingDirectorScreen = () => {
       <div className='grid md:grid-cols-12'>
         <div className='md:col-span-7 h-screen flex items-center justify-center bg-gradient-to-b from-white to-cyan-300 bg-opacity-25'>
           <div>
-            <div className='hexaton shape-outer heptagon bg-cyan-500 mx-auto'>
-              <div
-                className=' shape-inner heptagon bg-cover  bg-no-repeat '
-                style={{
-                  backgroundImage: `url(https://titasgas.portal.gov.bd/sites/default/files/files/titasgas.portal.gov.bd/page/3b24980f_9187_442c_a2f5_560cc98853da/2023-01-17-07-56-a93914b07818df2562fd399b4f5c2476.jpeg)`,
-                }}
-              ></div>
+            <div className=' flex justify-center justify-center'>
+              <img
+                className='w-1/2'
+                src={md}
+                alt=''
+              />
             </div>
             <div className='text-center py-5'>
               <h1 className='text-lg font-semibold'>

@@ -1,20 +1,21 @@
 import React from 'react';
 import background from '../assets/image/background.png';
+import minister from '../assets/image/minister.png';
 import '../style/photoFrame.css';
 const MinisterScreen = () => {
   return (
     <>
       <div className='md:grid md:grid-cols-12'>
         <div className='md:col-span-7 h-screen flex items-center justify-center bg-gradient-to-b from-white to-cyan-300 bg-opacity-25'>
-          <div>
-            <div className='hexaton shape-outer heptagon bg-cyan-500 mx-auto'>
-              <div
-                className=' shape-inner heptagon bg-cover  bg-no-repeat '
-                style={{
-                  backgroundImage: `url(https://powerdivision.portal.gov.bd/sites/default/files/files/powerdivision.portal.gov.bd/page/8ab6ee4f_c510_4aae_8ecb_1d569532517d/IMG-20211116-WA0000.jpg)`,
-                }}
-              ></div>
+          <div className=''>
+            <div className=' flex justify-center justify-center'>
+              <img
+                className='w-1/2'
+                src={minister}
+                alt=''
+              />
             </div>
+
             <div className='text-center py-5'>
               <h1 className='text-lg font-semibold'>নসরুল হামিদ, এম,পি</h1>
 
