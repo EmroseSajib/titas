@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className=''>
-      <CurrentComponent />
-      {/* <RoutineScreen /> */}
-      {/* <ManagingDirectorScreen /> */}
+      {/* <CurrentComponent /> */}
+      {/* <DashBoard /> */}
+      <RoutineScreen />
     </div>
   );
 }

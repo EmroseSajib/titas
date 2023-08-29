@@ -5,16 +5,23 @@ const DashBoard = () => {
   return (
     <div
       className='h-screen'
-      style={{
-        backgroundImage: `url(${Welcome})`, // Assuming Welcome is a variable holding the image URL
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top',
-        backgroundSize: '100% 50%',
-        // backgroundAttachment: 'fixed',
-      }}
+      // style={{
+      //   backgroundImage: `url(${Welcome})`, // Assuming Welcome is a variable holding the image URL
+      //   backgroundRepeat: 'no-repeat',
+      //   backgroundPosition: 'top',
+      //   backgroundSize: '100% 50%',
+      //   // backgroundAttachment: 'fixed',
+      // }}
     >
-      <div className='flex items-center justify-center h-screen'>
-        <div className='mt-48'>
+      <div className='h-[45vh]'>
+        <img
+          className='w-[100%] h-[45vh]'
+          src={Welcome}
+          alt=''
+        />
+      </div>
+      <div className='flex items-center justify-center h-[55vh]'>
+        <div className=' '>
           <div className=' flex justify-center items-center '>
             <img
               className='md:w-[15%] w-[40%] md:max-h-5/6 '

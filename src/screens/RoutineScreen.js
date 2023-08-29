@@ -105,7 +105,7 @@ const RoutineScreen = () => {
             <div class=' text-container border border-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700 overflow-hidden  w-[60%]'>
               <p class='animated-text '>
                 অবৈধ গ্যাস সংযোগ ও ব্যাবহার সংক্রান্ত সতর্কীকরণ বিজ্ঞপ্তি । যে
-                কোন প্রয়োজনে তিতাস হট লাইন ১৬৯৬ নম্বরে কল করুন ।
+                কোন প্রয়োজনে তিতাস হট লাইন ১৬৪৯৬ নম্বরে কল করুন ।
               </p>
             </div>
             {/* <div class='border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700'>
